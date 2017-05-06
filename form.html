@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Form</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+#button:hover{
+-webkit-animation-name:resize;
+-webkit-animation-duration: 1s;
+-webkit-animation-iteration-count:1;
+-webkit-animation-direction: alternate;
+-webkit-animation-timing-function:cubic-bezier(0,0.5,0,0);
+}
+
+</style>
+
+
+</head>
+<body>
+<center>
+<h1>Contact Information</h1>
+Name:
+<br>
+<input type="text" name="name" placeholder="Enter your Name" class="mytext"/>
+<br><br>
+Email:
+<br>
+<input type="text" name="email" placeholder="Enter email id" class="mytext"/>
+<br><br>
+Phone:
+<br>
+<input type="text" name="phone" placeholder="Enter phone number" class="mytext"/>
+<br><br>
+Address:
+<br>
+<input type="text" name="addr1" placeholder="Address Line 1"class="mytext"/>
+<br>
+<input type="text" name="addr2" placeholder="Address line 2" class="mytext"/>
+<br><input type="text" name="addrcity" placeholder="City"style="width:100px;"/>
+<input type="text" name="addrzip" placeholder="Zipcode" style="width:100px;"/>
+<input list="states" name="addstate" placeholder="State" style="width:92px;"/>
+<datalist id="states">
+  <option value="Maharashtra">
+  <option value="Kerala">
+  <option value="Karnataka">
+  <option value="Rajasthan">
+  <option value="U.P"
+</datalist>
+
+<input type="submit" id="button" onclick="alert('Welcome!')">Submit!</input>
+
+</center>
+</body>
+</html>
